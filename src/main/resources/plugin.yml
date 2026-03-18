@@ -1,0 +1,7 @@
+name: LazySecuLib
+version: '0.1'
+main: lazy.dev.lazySecuLib.LazySecuLib
+api-version: '1.21'
+prefix: LazySecuLib
+authors: [ LazyCato0o ]
+description: Library-plugin that provides functions for able create own plugins that can provide security.

@@ -1,0 +1,6 @@
+# !!! DO NOT TOUCH
+config_version: 1
+# !!! REPLACE WITH YOUR SERVER NAME !!!
+server_name: "My cool server"
+# For what it's needs for default lib?
+# Because we use it with TOTP service (Or in fw word: It will be displayed in authenticator app)
