@@ -1,0 +1,30 @@
+name: Publish to GitHub Packages
+
+on:
+  release:
+    types: [created]  # Публикация при создании релиза
+  push:
+    branches:
+      - main          # Или при пуше в main (можно убрать)
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write   # Необходимо для публикации
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      # Для Maven
+      - name: Publish with Maven
+        run: mvn --batch-mode deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
