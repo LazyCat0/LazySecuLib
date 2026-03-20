@@ -1,4 +1,9 @@
-package lazy.dev.lazySecuLib.Services;
+package lazy.dev.lazySecuLib.Services.Crypto;
+
+/*
+    This is a class for easier encrypting and decrypting.
+    If you want use other algorithm — Check other classes in Crypto package
+*/
 
 import javax.crypto.Cipher;
 import javax.crypto.spec.GCMParameterSpec;
@@ -7,11 +12,11 @@ import java.security.SecureRandom;
 import java.nio.ByteBuffer;
 import java.util.Base64;
 
-public class EncryptorService {
+public class CryptoServiceAES {
     private static final String ALGO = "AES/GCM/NoPadding";
     private final SecretKeySpec key;
 
-    public EncryptorService(byte[] keyBytes) {
+    public CryptoServiceAES(byte[] keyBytes) {
         this.key = new SecretKeySpec(keyBytes, "AES");
     }
 

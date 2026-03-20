@@ -4,3 +4,4 @@ config_version: 1
 server_name: "My cool server"
 # For what it's needs for default lib?
 # Because we use it with TOTP service (Or in fw word: It will be displayed in authenticator app)
+k: LazySecuLib # For crypto services

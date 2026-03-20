@@ -1,5 +1,5 @@
 name: LazySecuLib
-version: '0.1'
+version: '0.2'
 main: lazy.dev.lazySecuLib.LazySecuLib
 api-version: '1.21'
 prefix: LazySecuLib
