@@ -4,8 +4,8 @@ Library paper plugin that provides some of security services
 ### For Maven
 #### Repository
     <repository>
-		    <id>jitpack.io</id>
-		    <url>https://jitpack.io</url>
+        <id>jitpack.io</id>
+		<url>https://jitpack.io</url>
     </repository>
 #### Depency
     <dependency>
